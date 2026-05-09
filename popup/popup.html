@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Color Vision Assistant</h1>
+      <p class="tagline">See the web differently</p>
+    </header>
+
+    <div class="mode-toggle">
+      <button class="mode-btn active" data-mode="simulate">Simulate</button>
+      <button class="mode-btn" data-mode="accommodate">Accommodate</button>
+    </div>
+
+    <div class="type-list">
+      <button class="type-btn" data-type="protanopia">
+        <span class="dot dot-red"></span>
+        <span class="label">Protanopia</span>
+        <span class="desc">red-blind</span>
+      </button>
+      <button class="type-btn" data-type="deuteranopia">
+        <span class="dot dot-green"></span>
+        <span class="label">Deuteranopia</span>
+        <span class="desc">green-blind</span>
+      </button>
+      <button class="type-btn" data-type="tritanopia">
+        <span class="dot dot-blue"></span>
+        <span class="label">Tritanopia</span>
+        <span class="desc">blue-blind</span>
+      </button>
+      <button class="type-btn" data-type="protanomaly">
+        <span class="dot dot-red-light"></span>
+        <span class="label">Protanomaly</span>
+        <span class="desc">red-weak</span>
+      </button>
+      <button class="type-btn" data-type="deuteranomaly">
+        <span class="dot dot-green-light"></span>
+        <span class="label">Deuteranomaly</span>
+        <span class="desc">green-weak</span>
+      </button>
+      <button class="type-btn" data-type="tritanomaly">
+        <span class="dot dot-blue-light"></span>
+        <span class="label">Tritanomaly</span>
+        <span class="desc">blue-weak</span>
+      </button>
+      <button class="type-btn" data-type="achromatopsia">
+        <span class="dot dot-gray"></span>
+        <span class="label">Achromatopsia</span>
+        <span class="desc">monochrome</span>
+      </button>
+      <button class="type-btn" data-type="achromatomaly">
+        <span class="dot dot-gray-light"></span>
+        <span class="label">Achromatomaly</span>
+        <span class="desc">partial mono</span>
+      </button>
+    </div>
+
+    <button class="off-btn" id="offBtn">Turn Off</button>
+
+    <footer>
+      <span class="shortcut-hint">Alt+Shift+C to toggle</span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
